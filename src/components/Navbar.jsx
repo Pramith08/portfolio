@@ -6,6 +6,12 @@ const Navbar = () => {
     <div className="flex flex-shrink-0 items-">
         <img className='mx-2 w-10' src={logo} alt="" />
     </div>
+    <div className="m-8 flex items-center justify-center gap-8 text-2xl">
+      <p>Home</p>
+      <p>Experience</p>
+      <p>Projects</p>
+      <p>Contact</p>
+    </div>
   </nav>
 }
 
