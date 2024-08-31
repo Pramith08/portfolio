@@ -1,26 +1,47 @@
 import React from 'react'
 import { motion } from "framer-motion"
+import githubIcon from '../assets/githubicon.png'
+import linkedinIcon from '../assets/linkedinicon.png'
+import resume from '../assets/resume.pdf'
 
 const Home = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-            <div className="flex flex-wrap">
-                <div className="w-full lg:w-1/2">
-                    <div className="flex flex-col items-center lg:items-start">
-                        <motion.h1 initial={{x:-100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:0}} className=" pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl">
-                            Pramith Kiran
-                        </motion.h1>
-                        <motion.span initial={{x:-100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:0.5}} className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-                            Full Stack Developer
-                        </motion.span>
-                        <motion.p initial={{x:-100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:1}} className='my-2 max-w-xl py-6 font-light tracking-tighter'>
-                            The sun dipped below the horizon, casting a warm, golden hue across the landscape. The leaves rustled gently in the evening breeze, whispering secrets of the day gone by. In the distance, a river meandered lazily, its surface reflecting the fading light like a ribbon of molten gold. The air was filled with the scent of earth and pine, a reminder of the untamed beauty of nature. As twilight descended, the first stars began to twinkle in the sky, promising the serenity of a peaceful night ahead.
-                        </motion.p>
-                        <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Download Resume</button>
+        <section id='home'>
+            <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+                <div className="flex flex-wrap">
+                    <div className="w-full lg:w-1/2">
+                        <div className="flex flex-col items-center lg:items-start">
+                            <motion.h1 initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0 }} className=" pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl">
+                                Pramith Kiran
+                            </motion.h1>
+                            <motion.span initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.25 }} className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Full Stack Developer</motion.span>
+                            <motion.p initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className='my-2 max-w-xl py-6 font-light tracking-tighter'>
+                            A Cyber Seucirty enthusiast with a deep focus and passion for crafting secure, impactful applications. My expertise in Python and Flutter allows me to build innovative solutions that address real-world challenges. With a solid foundation in Computer Science and hands-on experience in the field, I am equipped to tackle complex technical problems. Outside of work, I enjoy staying active through basketball and spending quality time with my dog. I invite you to explore my work and connect with me as I continue my journey in the tech world.
+                            </motion.p>
+                            <motion.div className="flex pb-6 flex-wrap gap-2">
+                                <motion.a initial={{ x: -100, opacity: 0 }}animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }} href="https://github.com/Pramith08">
+                                <img src={githubIcon} alt="" />
+                                </motion.a>
+                                <motion.a initial={{ x: -100, opacity: 0 }}animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.75 }} href="https://www.linkedin.com/in/pramithkiran/">
+                                <img src={linkedinIcon} alt="" />
+                                </motion.a>
+                            </motion.div >
+                            {/* <motion.button type="button" initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1.5 }} className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Download Resume</motion.button> */}
+                            <motion.a href={resume}
+                                download="Pramith_Kiran_Resume.pdf"
+                                initial={{ x: -100, opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 1.25 }}
+                                className="text-white pb-4 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-4"
+                            >
+                                Download Resume
+                            </motion.a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     )
 }
 

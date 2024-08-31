@@ -7,10 +7,10 @@ const Navbar = () => {
         <img className='mx-2 w-10' src={logo} alt="" />
     </div>
     <div className="m-8 flex items-center justify-center gap-8 text-2xl">
-      <p>Home</p>
-      <p>Experience</p>
-      <p>Projects</p>
-      <p>Contact</p>
+      <a className='hover:text-cyan-300' href="#home" >Home</a>
+      <a className='hover:text-cyan-300' href="#experience" >Experience</a>
+      <a className='hover:text-cyan-300' href="#project" >Projects</a>
+      <a className='hover:text-cyan-300 ' href="#contact" >Contact</a>
     </div>
   </nav>
 }
