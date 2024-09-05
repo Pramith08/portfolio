@@ -56,12 +56,6 @@ export const PROJECTS = [
     description:
       "Created a Discord bot for Ezzy Search, enabling users to seamlessly explore GitHub repositories within Discord. The bot integrates with the existing Python application and Streamlit interface, utilizing Selenium for automated web scraping to deliver real-time search results.",
     technologies: ["Python", "Streamlit", "Selenium", "Discord"],
-  },{
-    title: "Portfolio",
-    images: [portfolio],
-    description:
-      "A personal portfolio website designed to showcase my projects, skills, and experience with a responsive layout.",
-    technologies: ["HTML", "Tailwind CSS", "React.js"],
   },
 ];
 
