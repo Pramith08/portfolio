@@ -1,9 +1,9 @@
 import React from 'react'
 import { CONTACT } from '../constants'
 import { motion } from "framer-motion"
-import emailicon from '../assets/emailicon.png'
-import phoneicon from '../assets/phoneicon.png'
-import locationicon from '../assets/locationicon.png'
+import emailicon from '../assets/mail.png'
+import phoneicon from '../assets/contact.png'
+import locationicon from '../assets/location.png'
 
 const Contact = () => {
     return (
