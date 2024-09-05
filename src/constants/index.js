@@ -1,4 +1,9 @@
-import project1 from "../assets/projects/project-1.jpg";
+import aeroEncrypt from "../assets/projects/aeroEncrypt.svg";
+import ezzySearch from "../assets/projects/ezzySearch.svg";
+import lungCancer from "../assets/projects/lungCancerDetectionSystem.svg";
+import portfolio from "../assets/projects/portfolio.svg";
+
+export const BIO = 'A Cyber Seucirty enthusiast with a deep focus and passion for crafting secure, impactful applications. My expertise in Python and Flutter allows me to build innovative solutions that address real-world challenges. With a solid foundation in Computer Science and hands-on experience in the field, I am equipped to tackle complex technical problems. Outside of work, I enjoy staying active through basketball and spending quality time with my dog. I invite you to explore my work and connect with me as I continue my journey in the tech world.'
 
 export const EXPERIENCES = [
   {
@@ -27,40 +32,41 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Aero Encrypt",
-    image: project1,
+    images: [aeroEncrypt],
     description:
       "A Flutter-based app for secure password storage and retrieval using hybrid AES+RSA encryption, ensuring credentials are stored locally and accessible only by the user.",
     technologies: ["Python", "Flutter", "Docker"],
   },
   {
     title: "Lung Cancer Detection System",
-    image: project1,
+    images: [ezzySearch],
     description:
       " A web application for early detection of lung cancer and tumors, integrating CNN and the Watershed algorithm to analyze lung CT scans and provide accurate diagnosis support.",
     technologies: ["Python", "CNN", "Watershed Algorithm", "HTML", "CSS", "Javascript"],
   },{
     title: "Ezzy Search",
-    image: project1,
+    images: [lungCancer],
     description:
       "Developed a Python application with a Streamlit interface to help new GitHub users explore repositories, using Selenium for automated web scraping to enhance the search process.",
     technologies: ["Python", "Streamlit", "Selenium"],
   },
   {
     title: "Ezzy Search - Discord Bot",
-    image: project1,
+    images: [portfolio],
     description:
       "Created a Discord bot for Ezzy Search, enabling users to seamlessly explore GitHub repositories within Discord. The bot integrates with the existing Python application and Streamlit interface, utilizing Selenium for automated web scraping to deliver real-time search results.",
     technologies: ["Python", "Streamlit", "Selenium", "Discord"],
   },{
-    title: "Pramith' Portfolio",
-    image: project1,
+    title: "Portfolio",
+    images: [portfolio],
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "A personal portfolio website designed to showcase my projects, skills, and experience with a responsive layout.",
     technologies: ["HTML", "Tailwind CSS", "React.js"],
   },
 ];
 
 export const CONTACT = {
+  location: "Chennai, Tamil Nadu",
   phoneNo: "+91 8925403042 ",
   email: "pramithkiran9@gmail.com",
 };
