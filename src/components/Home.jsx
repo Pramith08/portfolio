@@ -19,7 +19,7 @@ const Home = () => {
                             <motion.span initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.25 }} className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
                                 <TypeAnimation repeat={Infinity} sequence={[
                                     'Full Stack Developer', 2000,
-                                    'Cyber Seucirty Enthusiast', 2000,
+                                    'Cyber Seucurty Enthusiast', 2000,
                                     'Gamer', 2000,
                                 ]} />
                             </motion.span>
