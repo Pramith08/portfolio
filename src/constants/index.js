@@ -2,6 +2,7 @@ import aeroEncrypt from "../assets/projects/aeroEncrypt.svg";
 import ezzySearch from "../assets/projects/ezzySearch.svg";
 import lungCancer from "../assets/projects/lungCancerDetectionSystem.svg";
 import discordEzzySearch from "../assets/projects/ezzySearchDiscord.svg";
+import typeSpeedTracker from "../assets/projects/TypeSpeed.svg";
 
 export const BIO = 'A Cyber Seucirty enthusiast with a deep focus and passion for crafting secure, impactful applications. My expertise in Python and Flutter allows me to build innovative solutions that address real-world challenges. With a solid foundation in Computer Science and hands-on experience in the field, I am equipped to tackle complex technical problems. Outside of work, I enjoy staying active through basketball and spending quality time with my dog. I invite you to explore my work and connect with me as I continue my journey in the tech world.'
 
@@ -56,6 +57,13 @@ export const PROJECTS = [
     description:
       "Created a Discord bot for Ezzy Search, enabling users to seamlessly explore GitHub repositories within Discord. The bot integrates with the existing Python application and Streamlit interface, utilizing Selenium for automated web scraping to deliver real-time search results.",
     technologies: ["Python", "Streamlit", "Selenium", "Discord"],
+  },
+  {
+    title: "TypeSpeed - Tracker",
+    images: [typeSpeedTracker],
+    description:
+      "A python script to track and improve your typing speed in real-time with two distinct modes: Live Tracking Mode and Random Sentence Mode.",
+    technologies: ["Python", "Threading", "Key-Logging"],
   },
 ];
 
