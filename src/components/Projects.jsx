@@ -9,7 +9,7 @@ const Projects = () => {
             <div className="border-b border-neutral-900 pb-4">
                 <motion.h2 initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0 }} className='my-20 text-center text-4xl'>Projects</motion.h2>
                 <div>{PROJECTS.map((projects, index) => (
-                    <div className="mb-12 flex flex-wrap lg:justify-around" key={index}>
+                    <div className="mb-12 lg:flex lg:justify-around" key={index}>
                         <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1 }} className="items-center justify-around flex lg:w-5/6">
                             <Carousel data = {projects.images} className="mb-6"/>
                         </motion.div>
