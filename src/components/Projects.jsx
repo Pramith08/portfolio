@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel } from '../components/carousel'
+import { Carousel } from '../components/Carousel'
 import { PROJECTS } from '../constants'
 import { motion } from "framer-motion"
 
