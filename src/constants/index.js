@@ -77,7 +77,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  location: "Chennai, Tamil Nadu",
-  phoneNo: "+91 8925403042 ",
-  email: "pramithkiran9@gmail.com",
+  location: "Amherst, Massachusetts, USA",
+  phoneNo: "+1 (413) 315-0324 ",
+  email: "pgovindaredd@umass.edu",
 };
