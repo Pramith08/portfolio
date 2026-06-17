@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700;900&family=Geist+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-h: 84px;
+  --bg: #f5f0e8;
+  --bg2: #ece7de;
+  --bg3: #e4ddd2;
+  --text: #1a1a1a;
+  --text2: #6b6560;
+  --text3: #a09888;
+  --border: #d0cab8;
+  --accent: #1a1a1a;
+  --accent-fg: #f5f0e8;
+  --tag-bg: #f5f0e8;
+  --connect-bg: #1a1a1a;
+  --connect-fg: #f5f0e8;
+}
+
+[data-theme='dark'] {
+  --bg: #0d0f14;
+  --bg2: #0f1218;
+  --bg3: #161b26;
+  --text: #f1f5f9;
+  --text2: #94a3b8;
+  --text3: #475569;
+  --border: #1e2533;
+  --accent: #f1f5f9;
+  --accent-fg: #0d0f14;
+  --tag-bg: #161b26;
+  --connect-bg: #f1f5f9;
+  --connect-fg: #0d0f14;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Geist', sans-serif;
+}
+
+.hero {
+  overflow-anchor: none;
+}
+
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-anchor: none;
+  pointer-events: none;
+}
+
+.hero.canvas-ready .hero-heading,
+.hero.canvas-ready .hero-tagline {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero.lens-active {
+  cursor: none;
+}
+
+.hero.lens-active .hero-actions,
+.hero.lens-active .hero-actions * {
+  cursor: pointer;
+}
+
+.threat-lens {
+  position: absolute;
+  z-index: 40;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 260px;
+  border: 1.5px solid rgba(74, 222, 128, 0.8);
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 120ms ease;
+}
+
+.hero.lens-active .threat-lens {
+  opacity: 1;
+}
+
+.social-pill .pill-text {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateX(-4px);
+  transition: max-width 240ms ease, opacity 180ms ease, transform 240ms ease;
+}
+
+.social-pill:hover .pill-text,
+.social-pill:focus-visible .pill-text {
+  max-width: 132px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 760px) {
+  :root {
+    --nav-h: 60px;
+  }
+
+  .hero {
+    min-height: calc(100svh - var(--nav-h));
+    padding: 24px 18px 32px;
+  }
+
+  .hero-heading {
+    width: min(100%, 340px);
+    font-size: clamp(29px, 8.2vw, 34px);
+    line-height: 1.16;
+    margin-bottom: 24px;
+  }
+
+  .hero-name-line {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .hero-copy-desktop {
+    display: none;
+  }
+
+  .hero-copy-mobile {
+    display: block;
+  }
+
+  .hero-photo {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-tagline {
+    max-width: 315px;
+    white-space: normal;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    width: min(100%, 316px);
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-pill {
+    flex: 0 0 42px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-heading {
+    width: min(100%, 320px);
+    font-size: clamp(27px, 8vw, 32px);
+  }
+
+  .hero-photo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+}
